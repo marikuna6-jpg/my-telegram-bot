@@ -21,7 +21,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             messages=[
                 {"role": "user", "content": user_text}
             ],
-            model="llama-3.3-70b-versatile",
+            model="llama-3.1-8b-instant",
         )
         bot_response = chat_completion.choices[0].message.content
         await update.message.reply_text(bot_response)
