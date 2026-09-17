@@ -42,7 +42,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
         response = groq_client.chat.completions.create(
             messages=[{"role": "user", "content": user_text}],
-            model="llama-3.1-8b-instant",
+            model="llama-3.3-70b-versatile",
         )
         reply = response.choices[0].message.content
         await update.message.reply_text(reply)
