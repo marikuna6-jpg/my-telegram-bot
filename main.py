@@ -21,7 +21,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     }
     
     data = {
-        "model": "meta-llama/llama-3.3-70b-instruct:free",
+        "model": "meta-llama/llama-3.3-70b-instruct",
         "messages": [{"role": "user", "content": user_text}]
     }
 
