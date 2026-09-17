@@ -21,7 +21,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     }
     
     data = {
-        "model": "meta-llama/llama-3.3-70b-instruct",
+        "model": "google/gemini-2.5-flash:free",
         "messages": [{"role": "user", "content": user_text}]
     }
 
