@@ -48,7 +48,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(reply)
     except Exception as e:
         logging.error(f"Error: {e}")
-        await update.message.reply_text("შეცდომა მოხდა პასუხის გენერირებისას.")
+        await update.message.reply_text(f"ERR: {str(e)}")
 
 # 5. ბოტის გაშვება
 def main():
